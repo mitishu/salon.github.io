@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primates Nail Salon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&family=Great+Vibes&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">✨ Primates Nail Salon ✨</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="decorative-corner top-left"></div>
+        <div class="decorative-corner top-right"></div>
+        <div class="hero-container">
+            <div class="welcome-image-container">
+                <img src="static/images/capuchinmonkey1.jpeg" alt="Welcome to Primates Nail Salon" class="hero-image">
+                <div class="image-overlay"></div>
+            </div>
+            <div class="hero-text animate__animated animate__fadeIn">
+                <h1>Welcome to</h1>
+                <div class="fancy-title">Primates Nail Salon</div>
+                <p>Where Every Hand Tells a Story ✨</p>
+                <div class="sparkle-divider">♢ ♢ ♢</div>
+                <a href="#services" class="cta-button">Book Your Pampering Session <i class="fas fa-sparkles"></i></a>
+            </div>
+        </div>
+        <div class="decorative-corner bottom-left"></div>
+        <div class="decorative-corner bottom-right"></div>
+    </header>
+
+    <section id="services" class="services">
+        <div class="section-header">
+            <h2>Our Luxury Services</h2>
+            <div class="fancy-underline"></div>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-paint-brush"></i>
+                </div>
+                <h3>Classic Manicure</h3>
+                <p>Indulge in our signature nail care with perfect polish</p>
+                <div class="service-details">
+                    <span class="duration"><i class="far fa-clock"></i> 45 mins</span>
+                    <span class="price">From $35</span>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-gem"></i>
+                </div>
+                <h3>Luxury Gel Extensions</h3>
+                <p>Beautiful, durable nails with premium designs</p>
+                <div class="service-details">
+                    <span class="duration"><i class="far fa-clock"></i> 90 mins</span>
+                    <span class="price">From $65</span>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-magic"></i>
+                </div>
+                <h3>Artistic Nail Design</h3>
+                <p>Custom artwork and elegant patterns</p>
+                <div class="service-details">
+                    <span class="duration"><i class="far fa-clock"></i> 60 mins</span>
+                    <span class="price">From $45</span>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-spa"></i>
+                </div>
+                <h3>Deluxe Spa Pedicure</h3>
+                <p>Rejuvenating treatment with aromatherapy</p>
+                <div class="service-details">
+                    <span class="duration"><i class="far fa-clock"></i> 75 mins</span>
+                    <span class="price">From $55</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <div class="section-header">
+            <h2>Our Beautiful Work</h2>
+            <div class="fancy-underline"></div>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="static/images/lemure1.jpg" alt="Lemur Inspired Nails">
+                <div class="gallery-overlay">
+                    <span>✧ Elegant Lemur Style ✧</span>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="static/images/tarsier1.jpeg" alt="Tarsier Inspired Design">
+                <div class="gallery-overlay">
+                    <span>✧ Tarsier Glamour ✧</span>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="static/images/loris1.jpg" alt="Loris Inspired Art">
+                <div class="gallery-overlay">
+                    <span>✧ Loris Luxury ✧</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="previous-work" class="previous-work">
+        <div class="section-header">
+            <h2>Previous Client Gallery</h2>
+            <div class="fancy-underline"></div>
+        </div>
+        <div class="previous-work-container">
+            <div class="view-more-container">
+                <button onclick="openModal()" class="cta-button">
+                    <i class="fas fa-images"></i>
+                    View Our Complete Gallery
+                    <i class="fas fa-images"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="section-header">
+            <h2>Get in Touch</h2>
+            <div class="fancy-underline"></div>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>✧ Visit Our Salon ✧</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Forest & Woodland Habitat</p>
+                <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                <p><i class="fas fa-envelope"></i> info@primatesnailsalon.com</p>
+                <div class="hours">
+                    <h3>✧ Opening Hours ✧</h3>
+                    <p><i class="far fa-clock"></i> Monday - Saturday: 9:00 AM - 7:00 PM</p>
+                    <p><i class="far fa-clock"></i> Sunday: 10:00 AM - 5:00 PM</p>
+                </div>
+                <div class="social-links-contact">
+                    <h3>✧ Follow Us ✧</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+            <form class="contact-form">
+                <h3>✧ Book Your Visit ✧</h3>
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" required>
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Your Email" required>
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="form-group">
+                    <input type="tel" placeholder="Your Phone">
+                    <i class="fas fa-phone"></i>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Your Message" required></textarea>
+                    <i class="fas fa-comment"></i>
+                </div>
+                <button type="submit" class="cta-button">Send Message <i class="fas fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+            <p>&copy; 2024 Primates Nail Salon. All rights reserved.</p>
+        </div>
+        <div class="decorative-corner footer-left"></div>
+        <div class="decorative-corner footer-right"></div>
+    </footer>
+
+    <!-- Full Gallery Modal -->
+    <div id="galleryModal" class="modal">
+        <span class="modal-close" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <h2>✧ Primate-Inspired Nail Designs ✧</h2>
+
+            <!-- Strepsirrhini (Prosimians) Section -->
+            <h3 class="gallery-section-title">✧ Strepsirrhini Collection (Prosimians) ✧</h3>
+            <div class="modal-gallery-grid">
+                <!-- Lorisoidea (Lorises) -->
+                <div class="modal-gallery-item">
+                    <img src="static/images/loris1.jpg" alt="Slow Loris Design">
+                    <div class="gallery-overlay">
+                        <p class="design-name">Slow Loris (Nycticebus)</p>
+                        <p class="design-description">Nocturnal Grace</p>
+                    </div>
+                </div>
+                <div class="modal-gallery-item">
+                    <img src="static/images/loris2.jpg" alt="Pygmy Loris Design">
+                    <div class="gallery-overlay">
+                        <p class="design-name">Pygmy Loris (Xanthonycticebus)</p>
+                        <p class="design-description">Delicate Beauty</p>
+                    </div>
+                </div>
+
+                <!-- Lemuroidea (Lemurs) -->
+                <div class="modal-gallery-item">
+                    <img src="static/images/lemure1.jpg" alt="Ring-tailed Lemur Design">
+                    <div class="gallery-overlay">
+                        <p class="design-name">Ring-tailed Lemur (Lemur catta)</p>
+                        <p class="design-description">Madagascar Magic</p>
+                    </div>
+                </div>
+                <div class="modal-gallery-item">
+                    <img src="static/images/lemure2.jpeg" alt="Sifaka Lemur Design">
+                    <div class="gallery-overlay">
+                        <p class="design-name">Sifaka (Propithecus)</p>
+                        <p class="design-description">Dancing Grace</p>
+                    </div>
+                </div>
+                <div class="modal-gallery-item">
+                    <img src="static/images/lemure3.jpg" alt="Red Ruffed Lemur Design">
+                    <div class="gallery-overlay">
+                        <p class="design-name">Red Ruffed Lemur (Varecia)</p>
+                        <p class="design-description">Fiery Elegance</p>
+                    </div>
+                </div>
+                <div class="modal-gallery-item">
+                    <img src="static/images/lemure4.jpeg" alt="Crowned Lemur Design">
+                    <div class="gallery-overlay">
+                        <p class="design-name">Crowned Lemur (Eulemur)</p>
+                        <p class="design-description">Royal Touch</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarsiiformes Section -->
+            <h3 class="gallery-section-title">✧ Tarsiiformes Collection ✧</h3>
+            <div class="modal-gallery-grid">
+                <div class="modal-gallery-item">
+                    <img src="static/images/tarsier1.jpeg" alt="Philippine Tarsier Design">
+                    <div class="gallery-overlay">
+                        <p class="design-name">Philippine Tarsier (Carlito)</p>
+                        <p class="design-description">Night Watcher</p>
+                    </div>
+                </div>
+                <div class="modal-gallery-item">
+                    <img src="static/images/tarsier2.jpg" alt="Spectral Tarsier Design">
+                    <div class="gallery-overlay">
+                        <p class="design-name">Spectral Tarsier (Tarsius)</p>
+                        <p class="design-description">Mystic Gaze</p>
+                    </div>
+                </div>
+                <div class="modal-gallery-item">
+                    <img src="static/images/tarsier3.jpg" alt="Horsfield's Tarsier Design">
+                    <div class="gallery-overlay">
+                        <p class="design-name">Horsfield's Tarsier (Cephalopachus)</p>
+                        <p class="design-description">Exotic Charm</p>
+                    </div>
+                </div>
+                <div class="modal-gallery-item">
+                    <img src="static/images/tarsier4.jpeg" alt="Pygmy Tarsier Design">
+                    <div class="gallery-overlay">
+                        <p class="design-name">Pygmy Tarsier (Tarsius pumilus)</p>
+                        <p class="design-description">Tiny Wonder</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Anthropoidea - New World Monkeys -->
+            <h3 class="gallery-section-title">✧ New World Monkeys Collection (Platyrrhini) ✧</h3>
+            <div class="modal-gallery-grid">
+                <div class="modal-gallery-item">
+                    <img src="static/images/howlermonkey1.jpg" alt="Black Howler Design">
+                    <div class="gallery-overlay">
+                        <p class="design-name">Black Howler (Alouatta)</p>
+                        <p class="design-description">Voice of the Forest</p>
+                    </div>
+                </div>
+                <div class="modal-gallery-item">
+                    <img src="static/images/howlermonkey2.jpg" alt="Red Howler Design">
+                    <div class="gallery-overlay">
+                        <p class="design-name">Red Howler (Alouatta)</p>
+                        <p class="design-description">Crimson Caller</p>
+                    </div>
+                </div>
+                <div class="modal-gallery-item">
+                    <img src="static/images/capuchinmonkey1.jpeg" alt="White-faced Capuchin Design">
+                    <div class="gallery-overlay">
+                        <p class="design-name">White-faced Capuchin (Cebus)</p>
+                        <p class="design-description">Clever Beauty</p>
+                    </div>
+                </div>
+                <div class="modal-gallery-item">
+                    <img src="static/images/capuchinmonkey2.jpg" alt="Tufted Capuchin Design">
+                    <div class="gallery-overlay">
+                        <p class="design-name">Tufted Capuchin (Sapajus)</p>
+                        <p class="design-description">Wise Elegance</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Anthropoidea - Old World Monkeys -->
+            <h3 class="gallery-section-title">✧ Old World Monkeys Collection (Catarrhini) ✧</h3>
+            <div class="modal-gallery-grid">
+                <div class="modal-gallery-item">
+                    <img src="static/images/japanese-macaque-macaca-fuscata-close-up-of-hand-jigokudani-yaen-koen-national-park-japan-february-W85CR5.jpg" alt="Japanese Macaque Design">
+                    <div class="gallery-overlay">
+                        <p class="design-name">Japanese Macaque (Macaca fuscata)</p>
+                        <p class="design-description">Snow Monkey Grace</p>
+                    </div>
+                </div>
+                <div class="modal-gallery-item">
+                    <img src="static/images/colobusmonkey1.jpg" alt="Colobus Design">
+                    <div class="gallery-overlay">
+                        <p class="design-name">Black & White Colobus (Colobus)</p>
+                        <p class="design-description">Monochrome Majesty</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Great Apes Section -->
+            <h3 class="gallery-section-title">✧ Great Apes Collection (Hominoidea) ✧</h3>
+            <div class="modal-gallery-grid">
+                <!-- Gorillas -->
+                <div class="modal-gallery-item">
+                    <img src="static/images/gorilla1.jpg" alt="Mountain Gorilla Design">
+                    <div class="gallery-overlay">
+                        <p class="design-name">Mountain Gorilla (Gorilla beringei)</p>
+                        <p class="design-description">Highland Strength</p>
+                    </div>
+                </div>
+                <div class="modal-gallery-item">
+                    <img src="static/images/gorilla2.jpg" alt="Lowland Gorilla Design">
+                    <div class="gallery-overlay">
+                        <p class="design-name">Western Lowland Gorilla (Gorilla gorilla)</p>
+                        <p class="design-description">Forest Guardian</p>
+                    </div>
+                </div>
+                <div class="modal-gallery-item">
+                    <img src="static/images/gorilla3.jpeg" alt="Silverback Design">
+                    <div class="gallery-overlay">
+                        <p class="design-name">Silverback Gorilla</p>
+                        <p class="design-description">Majestic Leader</p>
+                    </div>
+                </div>
+
+                <!-- Orangutans -->
+                <div class="modal-gallery-item">
+                    <img src="static/images/pongo1.jpg" alt="Sumatran Orangutan Design">
+                    <div class="gallery-overlay">
+                        <p class="design-name">Sumatran Orangutan (Pongo abelii)</p>
+                        <p class="design-description">Island Wisdom</p>
+                    </div>
+                </div>
+                <div class="modal-gallery-item">
+                    <img src="static/images/pongo2.jpg" alt="Bornean Orangutan Design">
+                    <div class="gallery-overlay">
+                        <p class="design-name">Bornean Orangutan (Pongo pygmaeus)</p>
+                        <p class="design-description">Rainforest Royalty</p>
+                    </div>
+                </div>
+                <div class="modal-gallery-item">
+                    <img src="static/images/pongo3.jpg" alt="Tapanuli Orangutan Design">
+                    <div class="gallery-overlay">
+                        <p class="design-name">Tapanuli Orangutan (Pongo tapanuliensis)</p>
+                        <p class="design-description">Rare Treasure</p>
+                    </div>
+                </div>
+
+                <!-- Chimpanzees -->
+                <div class="modal-gallery-item">
+                    <img src="static/images/chimpanzees1.jpg" alt="Common Chimpanzee Design">
+                    <div class="gallery-overlay">
+                        <p class="design-name">Common Chimpanzee (Pan troglodytes)</p>
+                        <p class="design-description">Playful Spirit</p>
+                    </div>
+                </div>
+                <div class="modal-gallery-item">
+                    <img src="static/images/chimpanzees2.jpeg" alt="Bonobo Design">
+                    <div class="gallery-overlay">
+                        <p class="design-name">Bonobo (Pan paniscus)</p>
+                        <p class="design-description">Peaceful Grace</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Human Section -->
+            <h3 class="gallery-section-title">✧ Human Collection (Homo sapiens) ✧</h3>
+            <div class="modal-gallery-grid">
+                <div class="modal-gallery-item">
+                    <img src="static/images/human1.jpeg" alt="Human Design">
+                    <div class="gallery-overlay">
+                        <p class="design-name">Classic Human Style</p>
+                        <p class="design-description">Timeless Elegance</p>
+                    </div>
+                </div>
+                <div class="modal-gallery-item">
+                    <img src="static/images/human2.jpeg" alt="Human Design">
+                    <div class="gallery-overlay">
+                        <p class="design-name">Modern Human Style</p>
+                        <p class="design-description">Contemporary Chic</p>
+                    </div>
+                </div>
+                <div class="modal-gallery-item">
+                    <img src="static/images/human3.jpeg" alt="Human Design">
+                    <div class="gallery-overlay">
+                        <p class="design-name">Artistic Human Style</p>
+                        <p class="design-description">Creative Expression</p>
+                    </div>
+                </div>
+                <div class="modal-gallery-item">
+                    <img src="static/images/human4.jpeg" alt="Human Design">
+                    <div class="gallery-overlay">
+                        <p class="design-name">Natural Human Style</p>
+                        <p class="design-description">Pure Beauty</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Special Collection -->
+            <h3 class="gallery-section-title">✧ Featured Designs ✧</h3>
+            <div class="modal-gallery-grid">
+                <div class="modal-gallery-item">
+                    <img src="static/images/01204420.jpg" alt="Special Design">
+                    <div class="gallery-overlay">
+                        <p class="design-name">Signature Collection</p>
+                        <p class="design-description">Exclusive Artistry</p>
+                    </div>
+                </div>
+                <div class="modal-gallery-item">
+                    <img src="static/images/welcome.jpeg" alt="Welcome Design">
+                    <div class="gallery-overlay">
+                        <p class="design-name">Welcome Design</p>
+                        <p class="design-description">First Impressions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="static/js/script.js"></script>
+</body>
+</html>
+
